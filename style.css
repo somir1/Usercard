@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Viaoda Libre';
+}
+
+.container{
+    width: 900px;
+    border: 5px black solid;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.39);
+}
+
+.card{
+    background-color: chocolate;
+    position: relative;
+    width: 900px;
+    height: 300px;
+}
+
+.colored-bar{
+    background-color: cornflowerblue;
+    width: 900px;
+    height: 150px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 65px;
+    left: 95px;
+    font-size: 40px;
+}
+
+.info img{
+    position: relative;
+    left: 38px;
+}
+.info > img{
+    border: 5px solid chocolate;
+    border-radius: 50%;
+    filter: invert(1);
+}
+
+.location{
+    position: relative;
+    left: 95px;
+    bottom: 60px;
+    font-size: 25px;
+}
+
+.city{
+    position: relative;
+    left: 35px;
+    bottom: 40px;
+}
+
+.skills{
+    position: relative;
+    font-size: 20px;
+    left: 95px;
+    bottom: 90px;
+}
+
+.edit{
+    position: relative;
+    left: 95px;
+    bottom: 70px;
+    color: blueviolet;
+}
+
+.profile{
+    position: absolute;
+    left: 22px;
+    bottom: 5px;
+}
