@@ -1,35 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Profile</title>
 </head>
-<body>
-    <div class = "container">
-        <div class = "colored-bar"></div>
-        <div class = "card">
-            <div class = "info">
-                <img src = "user-circle.png" alt="user" width = "125px">
-                <p><b>Samir Hossain</b></p>
-            </div>
-            <div class = "location">
-                <img src = "map-marker.png" alt="" width = "20px"> 
-                <div class = "city"><p><b>Orlando, FL</b></p></div>
-            </div>
-            <div class = "skills"><b>Developer | Engineer | Problem Solver <br>
-                Master of shadows and the Internet!</b></div>
 
-                <div class="edit">
-                    <img src = "gear.png" alt="gear" width="20px">
-                    <div class="profile"><p><b><a href="http://">edit profile</a></b></p></div>
-                </div>
+<body>
+    <div class="top">
+        <div class="nav">
+            <h1 class="navtitle">Profile</h1>
+            <ul class="navlink">
+                <li><a href="#""><b>Home</b></a></li>
+                <li><a href=" #"" class="active"><b>My Profile</b></a></li>
+                <li><a href="#""><b>Find Connections</b></a></li>
+                <li class=" pushright"><button class="btn"><b>Sign Out</b></button></li>
+            </ul>
         </div>
     </div>
+
+    <div class="maincontainer">
+        <div class="leftcontainer">
+            <div class="container">
+                <div class="colored-bar">
+                    <img src="selfie.jpg" alt="user" width="125" class="user">
+                </div>
+                <div class="card">
+                    <div class="info">
+                        <p id="newname"><b>Samir Hossain</b></p>
+                    </div>
+                    <div class="location">
+                        <div class="city">
+                            <img src="map-marker.png" alt="map" width="20px">
+                            <span><b>Orlando, FL</b></span>
+                        </div>
+                    </div>
+                    <div class="skills"><b>Developer | Engineer | Problem Solver <br>
+                            Master of shadows and the Internet!</b></div>
+                    <div class="profile">
+                        <img src="gear.png" alt="gear" width="25px">
+                        <a onclick="nameChange()"><b>edit profile</b></a>
+                    </div>
+                </div>
+            </div>
+            <!-- end container 1 -->
+            <!-- start container 2 -->
+            <div class="container2">
+                <div class="colored-bar2">
+                    <span class="eduheader"><b>Education</b></span>
+                </div>
+
+                <div class="card2">
+                    <div class="schoolinfo">
+                        <p><b>Coding Dojo - Full Stack Bootcamp</b></p>
+                    </div>
+                    <div class="dates">
+                        <p><b>June 2021 - October 2021</b></p>
+                        <p>Triple Black belt in Python, MERN, and C#....</p>
+                    </div>
+                    <div class="schoolinfo2">
+                        <p><b>University of Central Florida</b></p>
+                    </div>
+                    <div class="dates">
+                        <p><b>June 2016 - December 2019</b></p>
+                        <p>Bachelors in Digital Media</p>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- end container 2 -->
+        <div class="rightcontainer">
+            <!-- start right container -->
+            <div class="container3">
+                <div class="colored-bar3">
+                    <div class="outline3">3</div>
+                    <span class="eduheader"><b>Conections</b></span>
+                </div>
+
+                <div class="card3">
+                    <div id="r1" class="card-row1">
+                        <img src="./adrien-s.jpg" alt="adrien" class="profilepic">
+                        <span class="names">Adrien D</span>
+                        <img onclick="remove(adrian)" src="./accept-circle.png" alt="yes" class="accept-no">
+                        <img onclick="remove(adrian)"src="./close-circle.png" alt="no" class="accept-no">
+                    </div>
+
+                    <div id="r2" class="card-row1">
+                        <img src="./alayne-s.jpg" alt="adrien" class="profilepic">
+                        <span class="names">Alayne T</span>
+                        <img onclick="remove(alayne)"src="./accept-circle.png" alt="yes" class="accept-no">
+                        <img onclick="remove(alayne)"src="./close-circle.png" alt="no" class="accept-no">
+                    </div>
+
+                    <div id="r3" class="card-row1">
+                        <img src="./anne-s.jpg" alt="adrien" class="profilepic">
+                        <span class="names">Anne J</span>
+                        <img onclick="remove(anne)"src="./accept-circle.png" alt="yes" class="accept-no">
+                        <img onclick="remove(anne)"src="./close-circle.png" alt="no" class="accept-no">
+                    </div>
+
+                </div>
+            </div>
+            <!--  -->
+
+            <div class="container4">
+                <div class="colored-bar4">
+                    <div class="outline4"><b>50+</b></div>
+                    <span class="eduheader"><b>Conections</b></span>
+                </div>
+
+                <div class="card4">
+                    <div class="card-row1">
+                        <img src="./arry-s.jpg" alt="adrien" class="profilepic">
+                        <span class="names">Arry Y</span>
+                    </div>
+
+                    <div class="card-row1">
+                        <img src="./phil-s.jpg" alt="adrien" class="profilepic">
+                        <span class="names">Phill K</span>
+                    </div>
+
+                    <div class="card-row1">
+                        <img src="./jane-m.jpg" alt="adrien" class="profilepic">
+                        <span class="names">Jane B</span>
+                    </div>
+                    <div class="card-row1">
+                        <a href="http://"><b>View More....</b></a>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div><!-- end right container -->
+    </div> <!-- end maincontainer -->
+    <script src="script.js"></script>
 </body>
+
 </html>
